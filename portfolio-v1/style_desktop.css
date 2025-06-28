@@ -1,6 +1,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/*---------------------------------------------------- C O L O R  T H E M E S ----------------------------------------------*/
+
+
 :root {
   --light_background : #F3F8F2;
   --light_accent : #6A994E;
@@ -12,6 +15,9 @@
   --dark_text : #34E5FF;
 }
 
+/*---------------------------------------------------- G E N E R A L ----------------------------------------------*/
+
+
 body {
   font-family: Poppins;
   color: var(--dark_text);
@@ -19,6 +25,13 @@ body {
   padding: 0;
   background-color: var(--dark_background);
 }
+
+h2 {
+  text-align: center;
+  font-size: 50px;
+}
+
+/*---------------------------------------------------- A C C U E I L ----------------------------------------------*/
 
 #accueil {
   text-align: center;
@@ -31,6 +44,13 @@ body {
 
 #accueil b {
   color: var(--dark_accent2);
+}
+
+/*---------------------------------------------------- N A V I G A T I O N ----------------------------------------*/
+
+
+.navigation h2 {
+  font-size: 26px
 }
 
 .navigation ul{
@@ -52,6 +72,8 @@ body {
   height: 250px;
 }
 
+/*---------------------------------------------------- P R O J E T S -----------------------------------------*/
+
 #projets {
   border: 3px solid blue;
   padding: 50px;
@@ -68,8 +90,34 @@ body {
 #projets li {
   background-color: var(--dark_accent);
   border: 3px solid var(--dark_accent2);
+  border-radius: 10px;
   text-align: center;
   width: 200px;
   height: 250px;
   margin: 10px;
+  
+}
+
+/*---------------------------------------------------- C O M P E T E N C E S -------------------------------------*/
+
+#competences h3 {
+  text-align: center;
+  font-size: 36px;
+}
+
+#competences ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  list-style-type: none;
+  margin: 30px;
+}
+
+#competences li {
+  border: 3px solid var(--dark_accent2);
+  border-radius: 10px;
+  background-color: var(--dark_accent);
+  text-align: center;
+  width: 150px;
+  height: 150px;
 }
