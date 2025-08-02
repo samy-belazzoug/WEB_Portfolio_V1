@@ -48,7 +48,6 @@ h2 {
 
 /*---------------------------------------------------- N A V I G A T I O N ----------------------------------------*/
 
-
 .navigation h2 {
   font-size: 26px
 }
@@ -76,14 +75,13 @@ h2 {
 
 #projets {
   border: 3px solid blue;
-  padding: 50px;
 }
 
 #projets ul{
-  border: 5px solid black;
+  border: 5px solid green;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content:space-around;
   list-style-type: none;
 }
 
@@ -92,10 +90,29 @@ h2 {
   border: 3px solid var(--dark_accent2);
   border-radius: 10px;
   text-align: center;
-  width: 200px;
+  width: 300px;
   height: 250px;
   margin: 10px;
   
+}
+
+#projets a:link {
+  color: var(--dark_accent2);
+}
+
+/* visited link */
+#projets a:visited {
+  color: var(--light_text);
+}
+
+/* mouse over link */
+#projets a:hover {
+  color: var(--dark_text);
+}
+
+/* selected link */
+#projets a:active {
+  color: red;
 }
 
 /*---------------------------------------------------- C O M P E T E N C E S -------------------------------------*/
@@ -120,4 +137,47 @@ h2 {
   text-align: center;
   width: 150px;
   height: 150px;
+}
+
+/*---------------------------------------------------- C O N T A C T ---------------------------------------------*/
+
+#contact h3 {
+  text-align: center;
+  font-size: 36px;
+}
+
+#contact ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  list-style-type: none;
+  margin: 30px;
+}
+
+#contact li {
+  border: 3px solid var(--dark_accent2);
+  border-radius: 10px;
+  background-color: var(--dark_accent);
+  text-align: center;
+  width: 250px;
+  height: 200px;
+}
+
+#contact a:link {
+  color: var(--dark_accent2);
+}
+
+/* visited link */
+#contact a:visited {
+  color: var(--light_text);
+}
+
+/* mouse over link */
+#contact a:hover {
+  color: var(--dark_text);
+}
+
+/* selected link */
+#contact a:active {
+  color: red;
 }
