@@ -1,8 +1,9 @@
+/*THEME*/
 :root {
-    --background: #254D32;
-    --text: #69B578;
-    --text-background: #3A7D44;
-    --text-plus: #D0DB97;
+    --background: #273043;
+    --text: #EFF6EE;
+    --text-background: #9197AE;
+    --text-plus: #F02D3A;
     --font: 'Figtree'
 }
 
@@ -13,7 +14,37 @@ body {
 }
 
 
-/**/
+/*------------------------------------------------------------- H E A D E R -------------------------------------------*/
 .header {
-    
+    /*BOX MODEL*/
+    padding: 150px;
+    margin: 10px;
+    color: var(--text);
+}
+
+.header h1 {
+    font-size: 92px;
+    margin-bottom: 15px;
+    text-shadow: 3px 2px var(--text-background);
+}
+
+.header p {
+    font-size: 46px;
+}
+
+.header hr {
+    width: 600px;
+    margin-left: 0px;
+    border: 1px solid var(--text-plus);
+}
+
+.header ul {
+    margin-left: 0px;
+    list-style-type: none;
+    display: flex;
+    justify-content:flex-start;
+}
+
+.header li {
+    margin-right: 50px;
 }
