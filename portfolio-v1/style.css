@@ -1,0 +1,19 @@
+:root {
+    --background: #254D32;
+    --text: #69B578;
+    --text-background: #3A7D44;
+    --text-plus: #D0DB97;
+    --font: 'Figtree'
+}
+
+/*GLOBAL SETTINGS*/
+body {
+    font-family: var(--font);
+    background-color: var(--background);
+}
+
+
+/**/
+.header {
+    
+}
