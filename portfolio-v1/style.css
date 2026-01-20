@@ -4,7 +4,8 @@
     --text: #EFF6EE;
     --text-background: #9197AE;
     --text-plus: #F02D3A;
-    --font: 'Figtree'
+    --font: 'Figtree';
+    --font2: 'Ubuntu'
 }
 
 /*GLOBAL SETTINGS*/
@@ -16,33 +17,72 @@ body {
 
 /*------------------------------------------------------------- H E A D E R -------------------------------------------*/
 .header {
-    /*BOX MODEL*/
     padding: 150px;
-    margin: 10px;
+    font-size: 32px;
     color: var(--text);
+    position: relative; /* Important pour le positionnement absolu des enfants */
+    overflow: hidden; /* Empêche le débordement horizontal */
+    min-height: 600px; /* Hauteur minimale pour l'espace d'animation */
+}
+
+/* Retire les divs statiques du HTML et utilise cette classe pour les éléments dynamiques */
+.floating-text {
+    color: red;
+    position: absolute;
+    font-family: var(--font);
+    left: -200px; /* Commence hors écran à gauche */
+    animation: slideRight 3s linear forwards;
+    white-space: nowrap;
+    pointer-events: none; /* Ne bloque pas les clics */
+    opacity: 0.7;
+}
+
+@keyframes slideRight {
+    from {
+        left: -200px;
+        opacity: 0;
+    }
+    10% {
+        opacity: 0.7;
+    }
+    90% {
+        opacity: 0.7;
+    }
+    to {
+        left: 100%;
+        opacity: 0;
+    }
 }
 
 .header h1 {
     font-size: 92px;
     margin-bottom: 15px;
     text-shadow: 3px 2px var(--text-background);
+    position: relative;
+    z-index: 10; /* Assure que le contenu principal reste au-dessus */
 }
 
 .header p {
     font-size: 46px;
+    position: relative;
+    z-index: 10;
 }
 
 .header hr {
     width: 600px;
     margin-left: 0px;
     border: 1px solid var(--text-plus);
+    position: relative;
+    z-index: 10;
 }
 
 .header ul {
     margin-left: 0px;
     list-style-type: none;
     display: flex;
-    justify-content:flex-start;
+    justify-content: flex-start;
+    position: relative;
+    z-index: 10;
 }
 
 .header li {
