@@ -4,15 +4,20 @@ function createFloatingElement(text) {
     div.className = 'floating-text';
     div.textContent = text;
     div.style.fontFamily = 'var(--font2)'
+    div.style.fontStyle = 'italic'
     
     // RANDOM VERTICAL POSITION (between 0-header height - 50px)
     const randomTop = Math.random() * (document.querySelector('.header').offsetHeight - 50);
     div.style.top = `${randomTop}px`;
     
     // RANDOM DURATION (2-4 seconds)
-    const randomDuration = 2 + Math.random() * 2;
+    const randomDuration = 3 + Math.random() * 3;
     div.style.animationDuration = `${randomDuration}s`;
     
+    // DECIDE IF ELEMENT SLIDE FROM LEFT TO RIGHT OR RIGHT TO LEFT
+    const direction = Math.random() < 0.6 ? 'slideRight' : 'slideLeft';
+    div.style.animationName = direction;
+
     document.querySelector('.header').appendChild(div);
     
     // GET RID OF THE ELEMENT AFTER ANIMATION
@@ -24,7 +29,7 @@ function createFloatingElement(text) {
 // WORD LIST
 const skills = [
     'Hello, World!',
-    'Python',
+    'Python3',
     'sys.exit()',
     '[x for x in l if x % 2 == 0]',
     'import sys',
@@ -33,7 +38,6 @@ const skills = [
     'class Car {}',
     'C',
     'gcc -Wall -Werror test.c -o test',
-    '0x178392',
     'free(&a)',
     'return 0;',
     'C#',
@@ -49,14 +53,22 @@ const skills = [
     'ls -la',
     'cd ..',
     'env',
-    'man execve()'
+    'man execve()',
+    'shared memory',
+    'dynamic allocation',
+    'static',
+    '0x112b8e',
+    '0x178392',
+    '0x21a32b',
+    '0x884e7d'
+
 ];
 
 // SPAWN A RANDOM ELEMENT EVERY 2 SECONDS
 setInterval(() => {
     const randomSkill = skills[Math.floor(Math.random() * skills.length)];
     createFloatingElement(randomSkill);
-}, 2000);
+}, 1000);
 
 // SPANW 2 ELEMENTS ON THE LOADING
 createFloatingElement('Hello, World!');
