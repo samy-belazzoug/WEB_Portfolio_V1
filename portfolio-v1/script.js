@@ -30,13 +30,19 @@ function createFloatingElement(text) {
 const skills = [
     'Hello, World!',
     'Python3',
+    'cursor.fetchall()',
     'sys.exit()',
     '[x for x in l if x % 2 == 0]',
     'import sys',
+    'import os',
     'C++',
+    'using namespace std;',
     'vector<string> planes',
     'class Car {}',
     'C',
+    '#include <stdlib.h>',
+    '#include <stdio.h>',
+    '#include <winsock.h>',
     'gcc -Wall -Werror test.c -o test',
     'free(&a)',
     'return 0;',
@@ -45,6 +51,7 @@ const skills = [
     'cargo run',
     'Unity',
     'BoxCollider2D',
+    'Java',
     'version control',
     'Git',
     'git add Car.cpp',
@@ -60,7 +67,14 @@ const skills = [
     '0x112b8e',
     '0x178392',
     '0x21a32b',
-    '0x884e7d'
+    '0x884e7d',
+    'PostgreSQL',
+    'SQLite',
+    'PRAGMA PRIMARY-KEY = ON;',
+    'MySQL',
+    'INTEGER client_id PRIMARY KEY AUTOINCREMENT;',
+    'CREATE TABLE IF NOT EXISTS accounts;',
+    'SELECT * FROM clients;'
 
 ];
 

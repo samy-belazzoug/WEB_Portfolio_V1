@@ -104,3 +104,19 @@ body {
 .header li {
     margin-right: 50px;
 }
+
+/*------------------------------------------------------------- A B O U T  M E -------------------------------------------*/
+
+.about-me {
+    display: flexbox;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.about-me section{
+    color: var(--text);
+    background-color: var(--text-background);
+    border-radius: 5px;
+    padding: 15px;
+    margin: 15px;
+}
