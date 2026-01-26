@@ -111,12 +111,10 @@ body {
 
 /*------------------------------------------------------------- A B O U T  M E -------------------------------------------*/
 
-.about-me {
-}
-
 .about-me h1 {
     color: var(--color7);
-    padding: 10px;
+    padding-left: 50px;
+
 }
 
 .about-me ul {
@@ -129,10 +127,11 @@ body {
 .about-me li {
     color: var(--color7);
     background-color: var(--color3);
+    box-shadow: 5px 5px var(--color2);
+    width: 200px;
     margin: 15px;
     border-radius: 5px;
     padding: 15px;
-
 }
 
 .about-me hr {
