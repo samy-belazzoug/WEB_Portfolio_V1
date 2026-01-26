@@ -1,9 +1,13 @@
 /*THEME*/
 :root {
-    --background: #273043;
-    --text: #EFF6EE;
-    --text-background: #9197AE;
-    --text-plus: #F02D3A;
+    --color1: #00072D;
+    --color2: #001C55;
+    --color3: #0A2472;
+    --color4: #0E6BA8;
+    --color5: #A6E1FA;
+    --color6: #D81E5B;
+    --color7: #EAE6E5;
+    --color8: #826AED;
     --font: 'Figtree';
     --font2: 'Ubuntu'
 }
@@ -11,7 +15,7 @@
 /*GLOBAL SETTINGS*/
 body {
     font-family: var(--font);
-    background-color: var(--background);
+    background-color: var(--color1);
 }
 
 
@@ -19,15 +23,15 @@ body {
 .header {
     padding: 150px;
     font-size: 32px;
-    color: var(--text);
+    color: var(--color7);
     position: relative; /* Important pour le positionnement absolu des enfants */
     overflow: hidden; /* Empêche le débordement horizontal */
-    min-height: 600px; /* Hauteur minimale pour l'espace d'animation */
+    min-height: 500px; /* Hauteur minimale pour l'espace d'animation */
 }
 
 /* Retire les divs statiques du HTML et utilise cette classe pour les éléments dynamiques */
 .floating-text {
-    color: red;
+    color: var(--color6);
     position: absolute;
     font-family: var(--font);
     animation: slideRight 3s linear forwards;
@@ -73,7 +77,7 @@ body {
 .header h1 {
     font-size: 92px;
     margin-bottom: 15px;
-    text-shadow: 3px 2px var(--text-background);
+    text-shadow: 3px 2px var(--color4);
     position: relative;
     z-index: 10; /* Assure que le contenu principal reste au-dessus */
 }
@@ -87,7 +91,7 @@ body {
 .header hr {
     width: 600px;
     margin-left: 0px;
-    border: 1px solid var(--text-plus);
+    border: 1px solid var(--color6);
     position: relative;
     z-index: 10;
 }
@@ -108,15 +112,29 @@ body {
 /*------------------------------------------------------------- A B O U T  M E -------------------------------------------*/
 
 .about-me {
-    display: flexbox;
-    justify-content: space-between;
-    flex-direction: row;
 }
 
-.about-me section{
-    color: var(--text);
-    background-color: var(--text-background);
+.about-me h1 {
+    color: var(--color7);
+    padding: 10px;
+}
+
+.about-me ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.about-me li {
+    color: var(--color7);
+    background-color: var(--color3);
+    margin: 15px;
     border-radius: 5px;
     padding: 15px;
-    margin: 15px;
+
+}
+
+.about-me hr {
+    border: 1px solid  var(--color6);
 }
