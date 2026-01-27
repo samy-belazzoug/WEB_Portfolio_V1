@@ -1,13 +1,11 @@
 /*THEME*/
 :root {
-    --color1: #00072D;
-    --color2: #001C55;
-    --color3: #0A2472;
-    --color4: #0E6BA8;
-    --color5: #A6E1FA;
-    --color6: #D81E5B;
-    --color7: #EAE6E5;
-    --color8: #826AED;
+    --color1: #271F30; /*BACKGROUND COLOR*/
+    --color2: #C3F73A; /*H1 AND BOX-SHADOW COLOR*/
+    --color3: #138A36; /*H1-SHADOW AND BOX COLOR*/
+    --color4: #BB0A21; /*ADDITIONAL COLOR 1*/
+    --color5: #FF01FB; /*ADDITIONNAL COLOR 2*/
+    --color6: #FFFFFF; /*TEXT COLOR*/
     --font: 'Figtree';
     --font2: 'Ubuntu'
 }
@@ -23,7 +21,7 @@ body {
 .header {
     padding: 150px;
     font-size: 32px;
-    color: var(--color7);
+    color: var(--color2);
     position: relative; /* Important pour le positionnement absolu des enfants */
     overflow: hidden; /* Empêche le débordement horizontal */
     min-height: 500px; /* Hauteur minimale pour l'espace d'animation */
@@ -31,7 +29,7 @@ body {
 
 /* Retire les divs statiques du HTML et utilise cette classe pour les éléments dynamiques */
 .floating-text {
-    color: var(--color6);
+    color: var(--color5);
     position: absolute;
     font-family: var(--font);
     animation: slideRight 3s linear forwards;
@@ -77,7 +75,7 @@ body {
 .header h1 {
     font-size: 92px;
     margin-bottom: 15px;
-    text-shadow: 3px 2px var(--color4);
+    text-shadow: 3px 2px var(--color3);
     position: relative;
     z-index: 10; /* Assure que le contenu principal reste au-dessus */
 }
@@ -91,7 +89,7 @@ body {
 .header hr {
     width: 600px;
     margin-left: 0px;
-    border: 1px solid var(--color6);
+    border: 1px solid var(--color4);
     position: relative;
     z-index: 10;
 }
@@ -113,8 +111,8 @@ body {
 
 .about-me h1 {
     color: var(--color7);
-    padding-left: 50px;
-
+    padding-left: 150px;
+    font-size: 40px;
 }
 
 .about-me ul {
@@ -125,10 +123,11 @@ body {
 }
 
 .about-me li {
+    font-size: 15px;
     color: var(--color7);
     background-color: var(--color3);
     box-shadow: 5px 5px var(--color2);
-    width: 200px;
+    width: 300px;
     margin: 15px;
     border-radius: 5px;
     padding: 15px;
