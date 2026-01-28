@@ -135,9 +135,9 @@ body {
     background-color: var(--color3);
     box-shadow: 5px 5px var(--color2);
     width: 350px;
-    margin: 15px;
+    margin: 8px;
     border-radius: 5px;
-    padding: 15px;
+    padding: 7px;
 }
 
 .about-me hr {
