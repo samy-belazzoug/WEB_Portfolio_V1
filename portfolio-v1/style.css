@@ -118,7 +118,7 @@ body {
 
 .about-me h2 {
     color: var(--color2);
-    font-size: 21px;
+    font-size: 20px;
     text-shadow: 3px 2px var(--color1);
 }
 
@@ -130,14 +130,14 @@ body {
 }
 
 .about-me li {
-    font-size: 15px;
+    font-size: 13px;
     color: var(--color7);
     background-color: var(--color3);
     box-shadow: 5px 5px var(--color2);
     width: 350px;
     margin: 8px;
     border-radius: 5px;
-    padding: 7px;
+    padding: 5px;
 }
 
 .about-me hr {
