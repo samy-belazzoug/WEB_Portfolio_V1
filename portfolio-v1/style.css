@@ -1,6 +1,6 @@
 /*THEME*/
 :root {
-    --color1: #271F30; /*BACKGROUND COLOR*/
+    --color1: #1A1F16; /*BACKGROUND COLOR*/
     --color2: #C3F73A; /*H1 AND BOX-SHADOW COLOR*/
     --color3: #138A36; /*H1-SHADOW AND BOX COLOR*/
     --color4: #BB0A21; /*ADDITIONAL COLOR 1*/
@@ -110,9 +110,16 @@ body {
 /*------------------------------------------------------------- A B O U T  M E -------------------------------------------*/
 
 .about-me h1 {
-    color: var(--color7);
+    color: var(--color2);
+    text-shadow: 3px 2px var(--color3);
     padding-left: 150px;
-    font-size: 40px;
+    font-size: 92px;
+}
+
+.about-me h2 {
+    color: var(--color2);
+    font-size: 21px;
+    text-shadow: 3px 2px var(--color1);
 }
 
 .about-me ul {
@@ -127,12 +134,12 @@ body {
     color: var(--color7);
     background-color: var(--color3);
     box-shadow: 5px 5px var(--color2);
-    width: 300px;
+    width: 350px;
     margin: 15px;
     border-radius: 5px;
     padding: 15px;
 }
 
 .about-me hr {
-    border: 1px solid  var(--color6);
+    border: 1px solid  var(--color4);
 }
