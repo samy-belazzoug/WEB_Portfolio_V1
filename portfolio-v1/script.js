@@ -74,7 +74,19 @@ const skills = [
     'MySQL',
     'INTEGER client_id PRIMARY KEY AUTOINCREMENT;',
     'CREATE TABLE IF NOT EXISTS accounts;',
-    'SELECT * FROM clients;'
+    'SELECT * FROM clients;',
+    'HTML',
+    '<p></p>',
+    '<!DOCTYPE html>',
+    'UTF-8',
+    'JS',
+    'const',
+    'function fibonacci() {}',
+    'CSS',
+    '.footer {}',
+    'display: flex;',
+    'list-style-type: none;',
+    ':root {}'
 
 ];
 
