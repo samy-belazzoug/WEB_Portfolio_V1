@@ -1,11 +1,11 @@
 /*THEME*/
 :root {
-    --color1: #1A1F16; /*BACKGROUND COLOR*/
-    --color2: #C3F73A; /*H1 AND BOX-SHADOW COLOR*/
-    --color3: #138A36; /*H1-SHADOW AND BOX COLOR*/
-    --color4: #BB0A21; /*ADDITIONAL COLOR 1*/
+    --color1: #2B2D42; /*BACKGROUND COLOR*/
+    --color2: #92DCE5; /*H1 AND BOX-SHADOW COLOR*/
+    --color3: #0075F2; /*H1-SHADOW AND BOX COLOR*/
+    --color4: #FE4A49; /*ADDITIONAL COLOR 1*/
     --color5: #FF01FB; /*ADDITIONNAL COLOR 2*/
-    --color6: #FFFFFF; /*TEXT COLOR*/
+    --color6: #F8F7F9; /*TEXT COLOR*/
     --font: 'Figtree';
     --font2: 'Ubuntu'
 }
@@ -29,7 +29,7 @@ body {
 
 /* Retire les divs statiques du HTML et utilise cette classe pour les éléments dynamiques */
 .floating-text {
-    color: var(--color5);
+    color: var(--color4);
     position: absolute;
     font-family: var(--font);
     animation: slideRight 3s linear forwards;
@@ -108,6 +108,11 @@ body {
 }
 
 /*------------------------------------------------------------- A B O U T  M E -------------------------------------------*/
+
+.about-me p {
+    color: var(--color6);
+    font-size: 15px;
+}
 
 .about-me h1 {
     color: var(--color2);
