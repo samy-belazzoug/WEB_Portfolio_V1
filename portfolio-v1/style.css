@@ -6,6 +6,7 @@
     --color4: #FE4A49; /*ADDITIONAL COLOR 1*/
     --color5: #FF01FB; /*ADDITIONNAL COLOR 2*/
     --color6: #F8F7F9; /*TEXT COLOR*/
+    --color7: #1EFC1E;
     --font: 'Figtree';
     --font2: 'Ubuntu'
 }
@@ -19,12 +20,14 @@ body {
 
 /*------------------------------------------------------------- H E A D E R -------------------------------------------*/
 .header {
-    padding: 150px;
+    padding-left: 150px;
+    padding-top: 150px;
+    padding-bottom: 50px;
     font-size: 32px;
     color: var(--color2);
     position: relative; /* Important pour le positionnement absolu des enfants */
     overflow: hidden; /* Empêche le débordement horizontal */
-    min-height: 500px; /* Hauteur minimale pour l'espace d'animation */
+    min-height: 400px; /* Hauteur minimale pour l'espace d'animation */
 }
 
 /* Retire les divs statiques du HTML et utilise cette classe pour les éléments dynamiques */
@@ -109,6 +112,10 @@ body {
 
 /*------------------------------------------------------------- A B O U T  M E -------------------------------------------*/
 
+.about-me {
+    padding-bottom: 50px;
+}
+
 .about-me p {
     color: var(--color6);
     font-size: 15px;
@@ -132,6 +139,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     list-style-type: none;
+    padding-left: 10px;
 }
 
 .about-me li {
@@ -146,5 +154,57 @@ body {
 }
 
 .about-me hr {
+    border: 1px solid  var(--color4);
+}
+
+/*------------------------------------------------------------- P R O J E C T S -------------------------------------------*/
+
+.projects h1 {
+    color: var(--color2);
+    text-shadow: 3px 2px var(--color3);
+    padding-left: 150px;
+    font-size: 92px;
+}
+
+.software {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px;
+    margin-bottom: 50px;
+}
+
+.software section {
+    background-color: var(--color3);
+    color: var(--color6);
+    box-shadow: 5px 5px var(--color7);
+    border-radius: 5px;
+
+    width: 250px;
+    margin: 0px;
+    padding: 10px;
+}
+
+.software section hr {
+    border: 1px solid  var(--color4);
+}
+
+.video-game {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 15px;
+}
+
+.video-game section {
+    background-color: var(--color3);
+    color: var(--color6);
+    box-shadow: 5px 5px var(--color5);
+    border-radius: 5px;
+
+    width: 250px;;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+.video-game section hr {
     border: 1px solid  var(--color4);
 }
