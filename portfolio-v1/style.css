@@ -6,7 +6,8 @@
     --color4: #FE4A49; /*ADDITIONAL COLOR 1*/
     --color5: #FF01FB; /*ADDITIONNAL COLOR 2*/
     --color6: #F8F7F9; /*TEXT COLOR*/
-    --color7: #1EFC1E;
+    --color7: #36F1CD;
+    --color8: #FF773D;
     --font: 'Figtree';
     --font2: 'Ubuntu'
 }
@@ -207,4 +208,41 @@ body {
 
 .video-game section hr {
     border: 1px solid  var(--color4);
+}
+
+/*------------------------------------------------------------- F O O T E R -------------------------------------------*/
+
+.footer {
+    background-color: var(--color3);
+    box-shadow: -5px -5px var(--color2);
+    color: var(--color6);
+    border-radius: 5px;
+    padding-top: 20px;
+    padding-bottom: 90px;
+}
+
+.footer-h1 {
+    color: var(--color2);
+    text-shadow: 3px 2px var(--color3);
+    padding-left: 150px;
+    font-size: 72px;
+}
+
+.footer h2 {
+    font-size: 38px;
+    color: var(--color8);
+    text-shadow: 0px 2px var(--color4);
+}
+
+.footer ul {
+    list-style-type: none;
+}
+
+.footer li {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer p {
+    font-size: 28px;
 }
